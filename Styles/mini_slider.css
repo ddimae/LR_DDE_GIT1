@@ -1,0 +1,65 @@
+/*
+essential styles:
+these make the slideshow work
+*/
+#slides{
+    position: relative;
+    height: 400px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    border: none;
+}
+
+.slide{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border: none;
+    z-index: 1;
+       /*box-shadow: 5px 3px 30px black;*/
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing{
+    opacity: 0.9;
+    z-index: 2;
+}
+
+
+
+/*
+non-essential styles:
+just for appearance; change whatever you want
+*/
+
+.slide{
+    font-size: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: transparent;
+    border: none;
+    color: #fff;
+}
+
+.slide:nth-of-type(1){
+    background-image: url(/resources/template/images/mini_slider/slider1.jpg);
+}
+.slide:nth-of-type(2){
+    background-image: url(/resources/template/images/mini_slider/slider2.jpg);
+}
+.slide:nth-of-type(3){
+    background-image: url(/resources/template/images/mini_slider/slider3.jpg);
+}
+.slide:nth-of-type(4){
+    background-image: url(/resources/template/images/mini_slider/slider4.jpg);
+}
+.slide:nth-of-type(5){
+    background-image: url(/resources/template/images/mini_slider/slider5.jpg);
+}
